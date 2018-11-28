@@ -1,0 +1,552 @@
+/* BG */
+.BG {
+    position: absolute;
+    width: 1920px;
+    height: 8048px;
+    left: 0px;
+    top: -39px;
+
+    background: url(../img/bg.png);
+    opacity: 0.6;
+}
+
+/* desktop */
+
+body {
+    position: relative;
+    width: 1920px;
+    height: 2992px;
+
+    background: #FFFFFF;
+}
+
+/* FAQ. Часто задаваемые вопросы */
+#faq {
+    position: absolute;
+    width: 570px;
+    height: 38px;
+    left: 370px;
+    top: 280px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 38px;
+    font-size: 36px;
+
+    color: #000000;
+}
+/* Главная / FAQ */
+#glav-faq {
+    position: absolute;
+    width: 118px;
+    height: 22px;
+    left: 370px;
+    top: 332px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+
+    color: #336799;
+}
+
+/* TOP */
+.top {
+    position: absolute;
+    width: 1922px;
+    height: 230px;
+    left: -1px;
+    top: 0px;
+}
+/* bg */
+.top .bg {
+    position: absolute;
+    width: 1920px;
+    height: 180px;
+    left: 0px;
+    top: 50px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* +7 495 380-25-00 */
+.top .number {
+    position: absolute;
+    width: 196px;
+    height: 29px;
+    left: 1355px;
+    top: 101px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+
+    color: #A80532;
+}
+/* Подобрать юр. адрес */
+.top a {
+    position: absolute;
+    width: 141px;
+    height: 17px;
+    left: 1408px;
+    top: 131px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    text-decoration-line: underline;
+
+    color: #3A64A2;
+
+}
+/* Каталог адресов */
+.top .karatog_adresov {
+    position: absolute;
+    width: 121.28px;
+    height: 17px;
+    left: 370px;
+    top: 190px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    text-decoration-line: underline;
+
+    color: #595959;
+}
+
+
+
+/* Rectangle 3.3 */
+
+.rectangle33 {
+    position: absolute;
+    width: 280px;
+    height: 283px;
+    left: 370px;
+    top: 395px;
+
+    background: #1E4163;
+    box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+/* Rectangle 3.2 */
+
+.rectangle33 p {
+    position: absolute;
+    width: 280px;
+    height: 47px;
+
+
+
+    background: #336799;
+    box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.2);
+}
+/* Общие вопросы */
+
+
+
+
+
+
+
+
+/* Регистрировать предприятие на
+подобные адреса это законно? Можно
+ ли будет использовать офис для
+ встреч? В чем отличие массовых
+ адресов от немассовых?
+ У Вас есть немассовые адреса? */
+
+
+
+
+
+/* Rectangle 3.4 */
+#rectangle34 {
+    position: absolute;
+    width: 280px;
+    height: 47px;
+    left: 370px;
+    top: 698px;
+
+    background: #336799;
+}
+
+/* Вопросы по юр. адресам */
+
+
+
+
+
+
+/* Rectangle 3.5 */
+#rectangle35 {
+    position: absolute;
+    width: 280px;
+    height: 47px;
+    left: 370px;
+    top: 765px;
+
+    background: #336799;
+}
+/* Rectangle 3.6 */
+#rectangle36 {
+    position: absolute;
+    width: 280px;
+    height: 68px;
+    left: 370px;
+    top: 832px;
+
+    background: #336799;
+}
+/* Rectangle 3.10 */
+#rectangle310 {
+    position: absolute;
+    width: 280px;
+    height: 47px;
+    left: 370px;
+    top: 919px;
+
+    background: #336799;
+}
+/* Rectangle 3.11 */
+#rectangle311 {
+    position: absolute;
+    width: 280px;
+    height: 47px;
+    left: 370px;
+    top: 986px;
+
+    background: #336799;
+}
+
+/* Вопросы по процессу работы */
+
+
+
+
+
+
+
+
+/* Rectangle 17 */
+
+.rectangle17 {
+    position: absolute;
+    width: 742px;
+    height: 50px;
+    left: 670px;
+    top: 392px;
+
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+}
+/* Rectangle 4.1 */
+#rectangle41 {
+    position: absolute;
+    width: 139px;
+    height: 50px;
+    left: 1411px;
+    top: 392px;
+
+    background: #FFFFFF;
+    border: 1px solid #336799;
+    box-sizing: border-box;
+}
+/* Rectangle 3.1 */
+#rectangle31 {
+    position: absolute;
+    width: 880px;
+    height: 253px;
+    left: 670px;
+    top: 465px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Rectangle 3.7 */
+#rectangle37 {
+    position: absolute;
+    width: 880px;
+    height: 253px;
+    left: 670px;
+    top: 738px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Rectangle 3.8 */
+#rectangle38 {
+    position: absolute;
+    width: 880px;
+    height: 253px;
+    left: 670px;
+    top: 1011px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+/* Rectangle 3.9 */
+#rectangle39 {
+    position: absolute;
+    width: 880px;
+    height: 253px;
+    left: 670px;
+    top: 1284px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+/* Работает горячая линия */
+
+span {
+    position: absolute;
+    width: 542px;
+    height: 83px;
+    left: 371px;
+    top: 1668px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 36px;
+    font-size: 34px;
+
+    color: #000000;
+}
+
+
+
+/* woman */
+.woman{
+    position: absolute;
+    width: 452px;
+    height: 439px;
+    left: 800px;
+    top: 1590px;
+
+    background: url(../img/woman.png);
+}
+/* Rectangle */
+#rectangle1 {
+    position: relative;;
+    width: 1922px;
+    height: 140px;
+    left: -2px;
+    top: 1772px;
+
+    background: linear-gradient(90deg, #336799 0%, #A80532 100%);
+}
+/* Остались вопросы Звоните прямо сейчас! */
+#rectangle1 #number {
+    position: absolute;
+    width: 321px;
+    height: 64px;
+    left: 371px;
+    top: 1810px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 38px;
+    font-size: 36px;
+
+    color: #FFFFFF;
+
+}
+
+
+/* Наша компания в цифрах */
+#cifra {
+    position: absolute;
+    width: 542px;
+    height: 83px;
+    left: 371px;
+    top: 2056px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px;
+    font-size: 34px;
+
+    color: #000000;
+}
+/* 16 */
+#a16 {
+    position: absolute;
+    width: 119px;
+    height: 101px;
+    left: 406px;
+    top: 2139px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 101px;
+    font-size: 96px;
+
+    color: #A80532;
+}
+/* Лет роста компании t16*/
+#t16 {
+    position: absolute;
+    width: 85px;
+    height: 38px;
+    left: 423px;
+    top: 2260px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 19px;
+    font-size: 18px;
+    text-align: center;
+
+    color: #000000;
+}
+
+/* 500 */
+#a500 {
+    position: absolute;
+    width: 161px;
+    height: 101px;
+    left: 712px;
+    top: 2139px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 101px;
+    font-size: 96px;
+
+    color: #A80532;
+}
+
+/* Адресов в нашей в базе t500*/
+#t500 {
+    position: absolute;
+    width: 113px;
+    height: 38px;
+    left: 737px;
+    top: 2260px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 19px;
+    font-size: 18px;
+    text-align: center;
+
+    color: #000000;
+}
+
+/* а17 */
+#a17 {
+    position: absolute;
+    width: 107px;
+    height: 101px;
+    left: 1071px;
+    top: 2148px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 101px;
+    font-size: 96px;
+
+    color: #A80532;
+}
+/* Офисов по всей Москве t17*/
+#t17 {
+    position: absolute;
+    width: 110px;
+    height: 38px;
+    left: 1069px;
+    top: 2269px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 19px;
+    font-size: 18px;
+    text-align: center;
+
+    color: #000000;
+}
+/* 30 */
+#a30 {
+    position: absolute;
+    width: 108px;
+    height: 101px;
+    left: 1386px;
+    top: 2139px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 101px;
+    font-size: 96px;
+
+    color: #A80532;
+}
+/* Минут и документы готовы! t30 */
+#t30 {
+    position: absolute;
+    width: 165px;
+    height: 38px;
+    left: 1358px;
+    top: 2260px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 19px;
+    font-size: 18px;
+    text-align: center;
+
+    color: #000000;
+}
+
+
+/* Rectangle 2 */
+.rectangle2 {
+    position: absolute;
+    width: 1920px;
+    height: 380px;
+    left: 0px;
+    top: 2382px;
+
+    background: #1E4163;
+}
+
+
+/* Rectangle 3 */
+.rectangle3 {
+    position: absolute;
+    width: 1920px;
+    height: 230px;
+    left: 0px;
+    top: 2762px;
+
+    background: #336799;
+    box-shadow: 0px -4px 25px rgba(0, 0, 0, 0.15);
+
+}
+
+
+
