@@ -1,80 +1,136 @@
-/* BG */
-.BG {
-    position: absolute;
+
+
+/* desktop */
+
+body {
     width: 1920px;
-    height: 8048px;
-    left: 0px;
-    top: -39px;
+    height: 2992px;
+
+    background: #FFFFFF;
 
     background: url(../img/bg.png);
     opacity: 0.6;
 }
 
-/* desktop */
-
-body {
-    position: relative;
-    width: 1920px;
-    height: 2992px;
-
-    background: #FFFFFF;
-}
-
-/* FAQ. Часто задаваемые вопросы */
-#faq {
-    position: absolute;
-    width: 570px;
-    height: 38px;
-    left: 370px;
-    top: 280px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 38px;
-    font-size: 36px;
-
-    color: #000000;
-}
-/* Главная / FAQ */
-#glav-faq {
-    position: absolute;
-    width: 118px;
-    height: 22px;
-    left: 370px;
-    top: 332px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 18px;
-
-    color: #336799;
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 
 /* TOP */
 .top {
-    position: absolute;
     width: 1922px;
     height: 230px;
     left: -1px;
+}
+
+/* top_line */
+.top .top_line {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 1922px;
+    height: 50px;
+    left: -1px;
     top: 0px;
 }
-/* bg */
-.top .bg {
-    position: absolute;
+/*blok_1*/
+.top_line .blok1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 621.71px;
+    height: 50px;
+    left: -1px;
+
+    background: linear-gradient(90deg, #C4C4C4 0%, #C4C4C4 0%, #336799 0.01%, #17548F 100%);
+    transform: rotate(-180deg);
+}
+
+
+
+
+/*blok|_2*/
+.top_line .blok2 {
+    width: 682.5px;
+    height: 50px;
+    left: 619.71px;
+    background-color: #336799;
+}
+
+/*blok_3*/
+.top_line .blok3 {
+    width: 617.79px;
+    height: 50px;
+    left: 1921px;
+    top: 50px;
+
+    background: linear-gradient(90deg, #C4C4C4 0%, #C4C4C4 0%, #336799 0.01%, #17548F 100%);
+    transform: rotate(-180deg);
+
+}
+/*top_bg*/
+.top .top_bg {
     width: 1920px;
     height: 180px;
     left: 0px;
     top: 50px;
-
     background: #FFFFFF;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+
+}
+.top .top_bg .group_logo {
+    display: flex;
+    position: absolute;
+    width: 215px;
+    height: 75px;
+    left: 370px;
+    top: 82px;
 }
 
+/* search */
+.top .top_bg .search {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    width: 600px;
+    height: 44px;
+    left: 670px;
+    top: 102px;
+}
+.search .poisk input {
+    width: 481px;
+    height: 44px;
+    left: 670px;
+    top: 102px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+
+    color: #828282;
+
+
+    background: #F6F6F6;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+}
+.search .nayti input {
+    width: 119px;
+    height: 44px;
+    left: 1151px;
+    top: 102px;
+
+    background: #FFFFFF;
+    border: 1px solid #336799;
+    box-sizing: border-box;
+}
 /* +7 495 380-25-00 */
-.top .number {
+.top_bg .number {
     position: absolute;
     width: 196px;
     height: 29px;
@@ -90,7 +146,7 @@ body {
     color: #A80532;
 }
 /* Подобрать юр. адрес */
-.top a {
+.top_bg .podobrat_ur_adres {
     position: absolute;
     width: 141px;
     height: 17px;
@@ -107,213 +163,243 @@ body {
     color: #3A64A2;
 
 }
-/* Каталог адресов */
-.top .karatog_adresov {
+/*menu*/
+.top_bg .menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     position: absolute;
-    width: 121.28px;
+    width: 1180px;
     height: 17px;
     left: 370px;
     top: 190px;
+
+    color: #595959;
+}
+.menu a {
+    font-size: 14px;
+    text-decoration-line: underline;
+}
+
+.menu a:nth-child(2) {
+    color: #0082FF;
+}
+/*---------------------------------------container*/
+
+/*container*/
+.container {
+    display: flex;
+    flex-direction: column;
+
+    height: 2152px; /*временно*/
+    width: 1180px;
+    padding-left: 370px;
+    padding-right: 370px;
+}
+
+
+
+/* FAQ. Часто задаваемые вопросы */
+.container .faq {
+    width: 1180px;
+    height: 38px;
+
+    float: left !important;
+    padding-top: 50px;
+    padding-bottom: 14px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 38px;
+    font-size: 36px;
+
+    color: #000000;
+}
+/* Главная / FAQ */
+.container .glavnaya_faq {
+
+    width: 1180px;
+    height: 22px;
+    float: left !important;
+
 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     line-height: normal;
-    font-size: 14px;
-    text-decoration-line: underline;
+    font-size: 18px;
+
+    color: #336799;
+}
+/*main content + saidbar*/
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 41px;
+}
+
+
+/*---------Saidbar*/
+.main .saidbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    height: 639px;
+}
+.saidbar div a {
+    padding-left: 19px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 26px;
+    font-size: 16px;
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+/*---saidbar-----blok1*/
+.saidbar .blok1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 283px;
+}
+
+.saidbar .blok1 .blok1_1 {
+    display: flex;
+    justify-content: flex-start;
+    height: 47px;
+
+    background: #336799;
+    box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.2);
+}
+.saidbar .blok1 .blok1_1 span{
+    padding-top: 11px;
+    padding-left: 19px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 26px;
+    font-size: 16px;
+
+    color: #FFFFFF;
+}
+
+.saidbar .blok1 .blok1_2 {
+    display: flex;
+    flex-direction: column;
+    height: 236px;
+
+    background: #1E4163;
+    box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+
+.main .saidbar .blok_2, .blok_3, .blok_5, .blok_6 {
+    height: 47px;
+
+    background: #336799;
+}
+.main .saidbar .blok_4 {
+    height: 68px;
+
+    background: #336799;
+}
+
+
+/*-----content*/
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 880px;
+}
+.content .search2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: 25px;
+    width: 880px;
+    height: 50px;
+}
+
+.content .search2 .poisk2{
+    width: 742px;
+    height: 50px;
+}
+.content .search2 .poisk2 input {
+    width: 742px;
+    height: 45px;
+    line-height: 26px;
+    font-size: 16px;
+}
+.content .search2 .nayti2 {
+    width: 139px;
+    height: 50px;
+}
+.content .search2 .nayti2 input {
+    width: 139px;
+    height: 50px;
+    color: #3A64A2;
+
+    background: #FFFFFF;
+    border: 1px solid #336799;
+    box-sizing: border-box;
+}
+
+
+
+.content .content1, .content2, .content3, .content4 {
+    display: flex;
+    flex-direction: column;
+    width: 880px;
+    height: 253px;
+    padding-top: 19px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.content .title {
+
+    padding-left: 56px;
+    width: 742px;
+    height: 86px;
+}
+.content .title p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 24px;
+
+    color: #336799;
+}
+.content .text {
+    padding-left: 56px;
+    width: 742px;
+    height: 760px;
+}
+.content .text p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 16px;
 
     color: #595959;
 }
 
 
 
-/* Rectangle 3.3 */
-
-.rectangle33 {
-    position: absolute;
-    width: 280px;
-    height: 283px;
-    left: 370px;
-    top: 395px;
-
-    background: #1E4163;
-    box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.2);
-}
-
-/* Rectangle 3.2 */
-
-.rectangle33 p {
-    position: absolute;
-    width: 280px;
-    height: 47px;
 
 
-
-    background: #336799;
-    box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.2);
-}
-/* Общие вопросы */
-
-
-
-
-
-
-
-
-/* Регистрировать предприятие на
-подобные адреса это законно? Можно
- ли будет использовать офис для
- встреч? В чем отличие массовых
- адресов от немассовых?
- У Вас есть немассовые адреса? */
-
-
-
-
-
-/* Rectangle 3.4 */
-#rectangle34 {
-    position: absolute;
-    width: 280px;
-    height: 47px;
-    left: 370px;
-    top: 698px;
-
-    background: #336799;
-}
-
-/* Вопросы по юр. адресам */
-
-
-
-
-
-
-/* Rectangle 3.5 */
-#rectangle35 {
-    position: absolute;
-    width: 280px;
-    height: 47px;
-    left: 370px;
-    top: 765px;
-
-    background: #336799;
-}
-/* Rectangle 3.6 */
-#rectangle36 {
-    position: absolute;
-    width: 280px;
-    height: 68px;
-    left: 370px;
-    top: 832px;
-
-    background: #336799;
-}
-/* Rectangle 3.10 */
-#rectangle310 {
-    position: absolute;
-    width: 280px;
-    height: 47px;
-    left: 370px;
-    top: 919px;
-
-    background: #336799;
-}
-/* Rectangle 3.11 */
-#rectangle311 {
-    position: absolute;
-    width: 280px;
-    height: 47px;
-    left: 370px;
-    top: 986px;
-
-    background: #336799;
-}
-
-/* Вопросы по процессу работы */
-
-
-
-
-
-
-
-
-/* Rectangle 17 */
-
-.rectangle17 {
-    position: absolute;
-    width: 742px;
-    height: 50px;
-    left: 670px;
-    top: 392px;
-
-    background: #FFFFFF;
-    border: 1px solid #C4C4C4;
-    box-sizing: border-box;
-}
-/* Rectangle 4.1 */
-#rectangle41 {
-    position: absolute;
-    width: 139px;
-    height: 50px;
-    left: 1411px;
-    top: 392px;
-
-    background: #FFFFFF;
-    border: 1px solid #336799;
-    box-sizing: border-box;
-}
-/* Rectangle 3.1 */
-#rectangle31 {
-    position: absolute;
-    width: 880px;
-    height: 253px;
-    left: 670px;
-    top: 465px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Rectangle 3.7 */
-#rectangle37 {
-    position: absolute;
-    width: 880px;
-    height: 253px;
-    left: 670px;
-    top: 738px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Rectangle 3.8 */
-#rectangle38 {
-    position: absolute;
-    width: 880px;
-    height: 253px;
-    left: 670px;
-    top: 1011px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-}
-/* Rectangle 3.9 */
-#rectangle39 {
-    position: absolute;
-    width: 880px;
-    height: 253px;
-    left: 670px;
-    top: 1284px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-}
-/* Работает горячая линия */
-
-span {
+/*------------ Работает горячая линия */
+.goryachaya_linia {
     position: absolute;
     width: 542px;
     height: 83px;
@@ -328,22 +414,10 @@ span {
 
     color: #000000;
 }
+/*------padval*/
 
-
-
-/* woman */
-.woman{
+.padval {
     position: absolute;
-    width: 452px;
-    height: 439px;
-    left: 800px;
-    top: 1590px;
-
-    background: url(../img/woman.png);
-}
-/* Rectangle */
-#rectangle1 {
-    position: relative;;
     width: 1922px;
     height: 140px;
     left: -2px;
@@ -351,17 +425,54 @@ span {
 
     background: linear-gradient(90deg, #336799 0%, #A80532 100%);
 }
-/* Остались вопросы Звоните прямо сейчас! */
-#rectangle1 #number {
+
+/* woman */
+img {
+    z-index: auto;
     position: absolute;
-    width: 321px;
-    height: 64px;
+    width: 452px;
+    height: 439px;
+    left: 800px;
+    top: 1590px;
+}
+/* Остались вопросы Звоните прямо сейчас! */
+.ostalis_voprosi {
+    position: absolute;
+
     left: 371px;
-    top: 1810px;
+    top: 38px;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
+    line-height: 38px;
+    font-size: 36px;
+
+    color: #FFFFFF;
+}
+.zvonite_seychas {
+    position: absolute;
+
+    left: 371px;
+    bottom: 38px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 38px;
+    font-size: 25px;
+
+    color: #FFFFFF;
+}
+/* +7 (495) 380-25-00 */
+.number2 {
+    position: absolute;
+    width: 319px;
+    height: 40px;
+    left: 1231px;
+    top: 50px;
+
+    font-family: Gilroy;
     line-height: 38px;
     font-size: 36px;
 
@@ -371,7 +482,7 @@ span {
 
 
 /* Наша компания в цифрах */
-#cifra {
+.kompania_v_cifrax {
     position: absolute;
     width: 542px;
     height: 83px;
@@ -385,168 +496,189 @@ span {
     font-size: 34px;
 
     color: #000000;
-}
-/* 16 */
-#a16 {
-    position: absolute;
-    width: 119px;
-    height: 101px;
-    left: 406px;
-    top: 2139px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 101px;
-    font-size: 96px;
-
-    color: #A80532;
-}
-/* Лет роста компании t16*/
-#t16 {
-    position: absolute;
-    width: 85px;
-    height: 38px;
-    left: 423px;
-    top: 2260px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 19px;
-    font-size: 18px;
-    text-align: center;
-
-    color: #000000;
-}
-
-/* 500 */
-#a500 {
-    position: absolute;
-    width: 161px;
-    height: 101px;
-    left: 712px;
-    top: 2139px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 101px;
-    font-size: 96px;
-
-    color: #A80532;
-}
-
-/* Адресов в нашей в базе t500*/
-#t500 {
-    position: absolute;
-    width: 113px;
-    height: 38px;
-    left: 737px;
-    top: 2260px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 19px;
-    font-size: 18px;
-    text-align: center;
-
-    color: #000000;
-}
-
-/* а17 */
-#a17 {
-    position: absolute;
-    width: 107px;
-    height: 101px;
-    left: 1071px;
-    top: 2148px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 101px;
-    font-size: 96px;
-
-    color: #A80532;
-}
-/* Офисов по всей Москве t17*/
-#t17 {
-    position: absolute;
-    width: 110px;
-    height: 38px;
-    left: 1069px;
-    top: 2269px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 19px;
-    font-size: 18px;
-    text-align: center;
-
-    color: #000000;
-}
-/* 30 */
-#a30 {
-    position: absolute;
-    width: 108px;
-    height: 101px;
-    left: 1386px;
-    top: 2139px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 101px;
-    font-size: 96px;
-
-    color: #A80532;
-}
-/* Минут и документы готовы! t30 */
-#t30 {
-    position: absolute;
-    width: 165px;
-    height: 38px;
-    left: 1358px;
-    top: 2260px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 19px;
-    font-size: 18px;
-    text-align: center;
-
-    color: #000000;
 }
 
 
-/* Rectangle 2 */
-.rectangle2 {
-    position: absolute;
+
+
+
+
+
+
+
+
+
+/*---------------footer*/
+.footer {
+
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+}
+
+
+
+
+/*footer1*/
+.footer .footer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     width: 1920px;
     height: 380px;
     left: 0px;
-    top: 2382px;
-
     background: #1E4163;
 }
 
+.footer .blok11 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1180px;
+    height: 43px;
+}
+.blok11 div a {
+    width: 200px;
+    height: 43px;
 
-/* Rectangle 3 */
-.rectangle3 {
-    position: absolute;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.blok11 div:nth-child(5) {
+    width: 117px;
+    height: 22px;
+}
+.footer .blok12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 1180px;
+    height: 225px;
+
+}
+.blok12 .blok6, .blok7, .blok8, .blok9 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 225px;
+
+}
+.blok12 .blok10 {
+    width: 117px;
+    height: 225px;
+}
+.blok12 div a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 25px;
+    font-size: 16px;
+
+    color: #8798A9;
+}
+
+.footer1 a {
+    color: #8798A9;
+}
+
+
+
+
+
+/*footer 2*/
+
+.footer .footer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 1920px;
     height: 230px;
-    left: 0px;
-    top: 2762px;
 
     background: #336799;
     box-shadow: 0px -4px 25px rgba(0, 0, 0, 0.15);
+}
+/*footer 2..........................blok 1*/
+.footer2 .blok1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 1180px;
+    height: 70px;
+}
+/* Любые виды оплаты и безналичный расчет! */
+.footer2 .blok1 .lyubie_vidi {
+    width: 174px;
+    height: 34px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 17px;
+    font-size: 16px;
+
+    color: #FFFFFF;
+}
+/* master */
+.footer2 .blok1 .master {
+    width: 70px;
+    height: 43px;
+    background-image: url("../img/ico-mastercard.svg");
+}
+/* qiwi */
+.footer2 .blok1 .qiwi {
+    width: 70px;
+    height: 43px;
+    background-image: url("../img/ico-qiwi.svg");
+}
+/* visa */
+.footer2 .blok1 .visa {
+    width: 70px;
+    height: 44px;
+    background-image: url("../img/ico-visa.svg");
+}
+/* webmoney */
+.footer2 .blok1 .webmoney {
+    width: 70px;
+    height: 43px;
+    background-image: url("../img/ico-webmoney.svg");
+}
+/* yandex */
+.footer2 .blok1 .yandex {
+    width: 70px;
+    height: 43px;
+    background-image: url("../img/ico-yandex-money.svg");
+}
+
+
+
+/*footer 2............blok2*/
+.footer2 .blok2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 1180px;
+    height: 70px;
 
 }
+
+
+
+
+
+
+
+
+
 
 
 
